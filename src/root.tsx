@@ -18,8 +18,9 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
+        <link rel="preload" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" as="style" />
       </head>
-      <body lang="en">
+      <body lang="en" class="flex flex-col min-h-screen">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
