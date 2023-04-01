@@ -17,8 +17,8 @@ export default component$(() => {
         <Header />
         <Slot />
       </main>
-      <div class="section dark">
-        <div class="container">
+      <div>
+        <div>
           <Footer />
         </div>
       </div>
