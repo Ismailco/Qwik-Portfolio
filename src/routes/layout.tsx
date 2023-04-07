@@ -6,7 +6,7 @@ import Navbar from '~/components/starter/navbar';
 
 export const useServerTimeLoader = routeLoader$(() => {
   return {
-    date: new Date().toISOString(),
+    date: new Date().getFullYear(),
   };
 });
 
