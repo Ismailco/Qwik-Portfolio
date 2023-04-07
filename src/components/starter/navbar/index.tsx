@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
-    <nav class="flex justify-around items-center h-16 bg-black text-white font-bold shadow-xl backdrop-blur-xl opacity-2">
+    <nav class="flex justify-around items-center h-16 bg-black text-white font-bold shadow-xl">
       <a href="#">Ismailcourr.<small class="text-xs">tech</small></a>
       <ul class="flex text-gray-300 font-normal">
         <li class="mx-4 border-b-2 hover:border-b-purple-800 border-b-transparent">
