@@ -5,7 +5,7 @@ export default component$(() => {
   const serverTime = useServerTimeLoader();
 
   return (
-    <footer class="flex justify-around items-center py-20">
+    <footer class="flex justify-around items-center py-10">
       <div class="flex flex-col justify-center items-start">
         <h2 class="my-4 font-bold hover:bg-clip-text hover:bg-button-grad hover:text-transparent cursor-pointer">
           Ismailcourr.<span class="text-xs">tech © {serverTime.value.date}</span>
