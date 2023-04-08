@@ -15,4 +15,5 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f3f3f3;
+  scroll-behavior: smooth;
 }
