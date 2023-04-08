@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
-    <header class="w-full my-20 flex items-center justify-around">
+    <header class="w-full my-20 flex flex-col-reverse xl:flex-row items-center justify-around">
       <div class="">
         <h1>
           Hello, <span>I'm Ismail,</span>

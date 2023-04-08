@@ -6,7 +6,7 @@ export default component$(() => {
       <a class="hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" href="#">
         Ismailcourr.<small class="text-xs">tech</small>
       </a>
-      <ul class="flex text-gray-300 font-normal">
+      <ul class="hidden xl:flex text-gray-300 font-normal">
         <li class="mx-4 border-b-2 hover:border-b-purple-800 border-b-transparent duration-500">
           <a href="#">Home</a>
         </li>

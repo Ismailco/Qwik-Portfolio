@@ -11,10 +11,10 @@ export default component$(() => {
         <p class="-rotate-2 bg-[#f3f3f3] border shadow-md hover:shadow-xl duration-700 min-w-[1000%] h-16 flex justify-center items-center">Web Development ⚡ Frontend Development ⚡ Fullstack Development ⚡ Mobile Development ⚡ Web Development ⚡ Frontend Development ⚡ Fullstack Development⚡ Mobile Development ⚡</p>
       </div>
       <Projects />
-      <section class="flex justify-between items-center py-20 px-52 my-10 bg-black text-white">
-        <h3 class="font-bold text-4xl">
+      <section class="flex flex-col xl:flex-row justify-between xl:items-start py-20 px-10 xl:px-32 my-10 bg-black text-white">
+        <h3 class="font-bold text-3xl mb-10 md:mb-0">
           Have An Awesome
-          <br /> Project Idea? Leat's Discuss
+          <br /> Project Idea? Let's Discuss
         </h3>
         <button class="bg-button-grad rounded-full font-bold py-12 px-5 border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-700">Contact Me</button>
       </section>
