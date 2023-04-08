@@ -17,7 +17,7 @@ export default component$(() => {
         </div>
       </div>
       <div class="w-1/3">
-        <img src="https://images.unsplash.com/photo-1517841900229-4d705fdff52e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="hero-picture" />
+        <img src="https://avatars.githubusercontent.com/u/25227022?v=4" alt="hero-picture" />
       </div>
     </header>
   );
