@@ -11,11 +11,11 @@ export default component$(() => {
           based in Morocco.
         </h1>
         <p class="">I'm a Frontend Developer based in Morocco. I'm passionate about building web applications and I love to learn new things.</p>
-        <div class="font-bold my-4">
-          <button class="shadow-md bg-button-grad border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent text-black rounded-full px-6 py-2 duration-500 my-2" type="button">
+        <div class="font-bold my-6">
+          <button class="shadow-md bg-button-grad border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent text-black rounded-full px-6 py-2 duration-500" type="button">
             GET IN TOUCH
           </button>
-          <button class="shadow-md hover:text-black border border-gray-500 rounded-full px-6 py-2 bg-clip-text bg-button-grad text-transparent duration-500 my-2 xl:mx-4" type="button">
+          <button class="shadow-md hover:text-black border border-gray-500 rounded-full px-6 py-2 bg-clip-text bg-button-grad text-transparent duration-500 md:mx-4" type="button">
             VIEW ALL MY WORKS
           </button>
         </div>

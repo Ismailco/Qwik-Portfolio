@@ -15,13 +15,13 @@ export default component$(() => {
       <div class="w-4/5 md:w-1/3 flex flex-col items-center justify-start md:justify-end md:items-end">
         <ul class="flex mt-10 md:my-2 font-bold">
           <li class="mx-2 border-b-2 hover:border-b-purple-800 border-b-transparent duration-300">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="mx-2 border-b-2 hover:border-b-purple-800 border-b-transparent duration-300">
-            <a href="#">About Me</a>
+            <a href="#about">About Me</a>
           </li>
           <li class="mx-2 border-b-2 hover:border-b-purple-800 border-b-transparent duration-300">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <ul class="flex my-2">
