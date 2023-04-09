@@ -19,7 +19,7 @@ export default component$(() => {
         <RouterHead />
         <link rel="preload stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" as="style" type="text/css" />
       </head>
-      <body lang="en" class="flex flex-col min-h-screen">
+      <body lang="en" class="flex flex-col justify-start min-h-screen">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
