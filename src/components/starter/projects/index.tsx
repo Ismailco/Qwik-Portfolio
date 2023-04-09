@@ -62,7 +62,7 @@ export default component$(() => {
   ];
 
   return (
-    <section class="w-full flex flex-col justify-center items-center my-20">
+    <section id="projects" class="w-full flex flex-col justify-center items-center my-20">
       <h2 class="font-bold text-3xl mb-20">My Projects</h2>
       <section class="grid grid-cols-1 xl:grid-cols-3 gap-10 grid-flow-row place-content-center place-items-center">
         {projects.map((project) => (
