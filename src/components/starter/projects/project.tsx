@@ -10,9 +10,9 @@ type ProjectProps = {
 
 export default component$(({ name, image, source, live, tech }: ProjectProps) => {
   return (
-    <article class="w-96 rounded-md border border-gray-300 shadow-md hover:shadow-sm">
-      <div class="opacity-0 hover:opacity-100 h-0 w-0 relative">
-        <div class={`hover:backdrop-blur-sm rounded-md w-96 h-52 relative hover:bg-gray-300/70`}>
+    <article class="w-96 md:w-full rounded-md border border-gray-300 shadow-md hover:shadow-sm">
+      <div class="opacity-0 hover:opacity-100 h-0 w-full relative">
+        <div class={`hover:backdrop-blur-sm rounded-md w-full h-52 relative hover:bg-gray-300/70`}>
           <div class="text-center">
             <ul class="flex py-6 justify-center items-center">
               <li class="mr-5 bg-button-grad mx-1 rounded-full flex justify-center items-center p-0.5">
