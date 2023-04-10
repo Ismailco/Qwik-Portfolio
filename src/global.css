@@ -74,6 +74,11 @@ h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* make the scroll bar smaller and stylish in desktop */
 ::-webkit-scrollbar {
   width: 0.5rem;
