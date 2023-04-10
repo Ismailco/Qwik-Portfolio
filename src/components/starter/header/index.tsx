@@ -4,7 +4,7 @@ export default component$(() => {
   return (
     <header id="home" class="w-full my-32 flex flex-col-reverse xl:flex-row items-center xl:items-start justify-around">
       <div class="w-5/6 xl:w-1/3 my-10">
-        <h1 class="font-bold text-3xl xl:text-6xl line- w-full mb-4">
+        <h1 class="font-bold text-3xl xl:text-5xl line- w-full mb-4">
           Hello, <span class="bg-clip-text bg-button-grad text-transparent">I'm Ismail,</span>
           <br />
           Frontend Developer <br />

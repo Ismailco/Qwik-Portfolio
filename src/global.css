@@ -6,6 +6,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* include all the fonts from the /fonts */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Global styles */
+
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +63,28 @@ body {
   background-color: #f3f3f3;
 }
 
-/* h1, h2, h3 {
-  font-family: 'Ubuntu, sans-serif';
-} */
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* make the scroll bar smaller and stylish in desktop */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #3f3f3f76;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b1fb98a;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b1fb9bb;
+}
+
+
