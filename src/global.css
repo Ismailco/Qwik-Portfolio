@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 /* include all the fonts from the /fonts */
-/* @font-face {
+@font-face {
   font-family: 'Roboto';
   src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -53,7 +53,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-} */
+}
 
 /* Global styles */
 * {
