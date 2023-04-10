@@ -16,12 +16,12 @@ export default component$(({ name, image, source, live, tech }: ProjectProps) =>
           <div class="text-center">
             <ul class="flex py-6 justify-center items-center">
               <li class="mr-5 bg-button-grad mx-1 rounded-full flex justify-center items-center p-0.5">
-                <a class="bg-[#f3f3f3] hover:bg-button-grad rounded-full p-2 duration-700" target="_blank" href={source}>
+                <a class="bg-[#f3f3f3] hover:bg-button-grad rounded-full p-2 duration-700" aria-label="Source code link" target="_blank" href={source}>
                   <i class="text-gray-600 fa-duotone fa-code fa-xl"></i>
                 </a>
               </li>
               <li class="ml-5 bg-button-grad mx-1 rounded-full flex justify-center items-center p-0.5">
-                <a class="bg-[#f3f3f3] hover:bg-button-grad rounded-full p-2 duration-700" target="_blank" href={live}>
+                <a class="bg-[#f3f3f3] hover:bg-button-grad rounded-full p-2 duration-700" aria-label="Live web app link" target="_blank" href={live}>
                   <i class="text-gray-600 fa-duotone fa-arrow-up-right-from-square fa-xl"></i>
                 </a>
               </li>
