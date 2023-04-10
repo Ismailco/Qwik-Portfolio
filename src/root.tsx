@@ -16,10 +16,10 @@ export default component$(() => {
     <QwikCityProvider>
       <head>
         <meta charSet="utf-8" />
-        <link rel="manifest" href="/manifest.json" />
         <RouterHead />
+        <link rel="preload stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" as="style" type="text/css" />
       </head>
-      <body lang="en">
+      <body lang="en" class="flex flex-col justify-start min-h-screen">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
