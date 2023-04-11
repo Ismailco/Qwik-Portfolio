@@ -1,6 +1,10 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, $ } from '@builder.io/qwik';
 import Header from '~/components/starter/header';
 import Projects from '~/components/starter/projects';
+
+export const sendEmail = $(() => {
+  window.location = 'mailto:ismailcourr@gmail.com' as any;
+});
 
 export default component$(() => {
   return (
@@ -17,7 +21,9 @@ export default component$(() => {
           <br /> Project Idea? Let's Discuss
         </h3>
         <div class="w-3/4 md:w-1/3 flex md:justify-end md:items-center">
-          <button class="w-full md:w-fit bg-button-grad rounded-full font-bold py-12 px-4 border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-700">Contact Me</button>
+          <button class="w-full md:w-fit bg-button-grad rounded-full font-bold py-12 px-4 border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-700" type="button" onClick$={sendEmail}>
+            Contact Me
+          </button>
         </div>
       </section>
     </>

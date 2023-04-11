@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik';
+import { sendEmail } from '~/routes';
 
 export default component$(() => {
+
   return (
     <header id="home" class="w-full my-32 flex flex-col-reverse xl:flex-row items-center xl:items-start justify-around">
       <div class="w-5/6 xl:w-1/3 my-10">
@@ -12,11 +14,13 @@ export default component$(() => {
         </h1>
         <p class="">I'm a Frontend Developer based in Morocco. I'm passionate about building web applications and I love to learn new things.</p>
         <div class="font-bold my-6">
-          <button class="shadow-md bg-button-grad border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent text-black rounded-full px-6 py-2 duration-500" type="button">
+          <button class="shadow-md bg-button-grad border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent text-black rounded-full px-6 py-2 duration-500" type="button" onClick$={sendEmail}>
             GET IN TOUCH
           </button>
           <button class="shadow-md hover:text-black border border-gray-500 rounded-full px-6 py-2 bg-clip-text bg-button-grad text-transparent duration-500 md:mx-4" type="button">
-            VIEW ALL MY WORKS
+            <a href="/Resume.pdf" target="_blank" rel="noopener" aria-label="resume">
+              MY RESUME
+            </a>
           </button>
         </div>
       </div>

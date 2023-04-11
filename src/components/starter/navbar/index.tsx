@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+import { sendEmail } from '~/routes';
 
 export default component$(() => {
   return (
@@ -18,7 +19,7 @@ export default component$(() => {
         </li>
       </ul>
       <div class="md:w-1/3 xl:w-1/6 flex justify-end items-center">
-        <button class="bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button">
+        <button class="bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button" onClick$={sendEmail}>
           LET'S TALK
         </button>
       </div>
