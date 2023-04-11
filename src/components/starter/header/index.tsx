@@ -2,7 +2,6 @@ import { component$ } from '@builder.io/qwik';
 import { sendEmail } from '~/routes';
 
 export default component$(() => {
-
   return (
     <header id="home" class="w-full my-32 flex flex-col-reverse xl:flex-row items-center xl:items-start justify-around">
       <div class="w-5/6 xl:w-1/3 my-10">
