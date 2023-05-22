@@ -1,22 +1,20 @@
-import { component$, $, useSignal } from '@builder.io/qwik';
-import { sendEmail } from '~/routes';
+import { component$, $ } from '@builder.io/qwik';
 import { scrollToElement } from './scroll-to';
 
 export default component$(() => {
-  const menu = useSignal(false);
-
   const toggleMenu = $(() => {
-    menu.value = !menu.value;
-     if (typeof window !== 'undefined') {
-       const menu = document.getElementById('mobile-menu');
-       if (menu) {
-          if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-          } else {
-            menu.classList.add('hidden');
-          }
-       }
-     }
+    if (typeof window !== 'undefined') {
+      const menuCont = document.getElementById('mobile-menu');
+      if (menuCont) {
+        if (menuCont.classList.contains('hidden')) {
+          menuCont.classList.remove('hidden');
+          menuCont.classList.add('flex');
+        } else {
+          menuCont.classList.add('hidden');
+          menuCont.classList.remove('flex');
+        }
+      }
+    }
   });
 
   return (
@@ -42,27 +40,64 @@ export default component$(() => {
         </li>
       </ul>
       <div class="md:w-1/3 xl:w-1/6 flex justify-end items-center">
-        <button class="hidden xl:block bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button" onClick$={sendEmail}>
+        <button class="hidden xl:block bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button" onClick$={() => scrollToElement('contact-section')}>
           LET'S TALK
         </button>
         <button class="xl:hidden bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button" onClick$={toggleMenu}>
           Menu
         </button>
-        <div id="mobile-menu" class="flex flex-col justify-start items-start rounded-bl-full bg-black px-10 shadow-xl xl:hidden absolute w-96 h-screen top-16 right-0">
+        <div id="mobile-menu" class="hidden flex-col justify-start items-start rounded-bl-full bg-black px-10 shadow-xl xl:hidden absolute w-96 h-screen top-16 right-0">
           <ul class="text-[#f3f3f3d1] mb-40 font-bold text-2xl">
             <li class="m-4 border-b-2 hover:border-b-purple-800 border-b-transparent duration-500">
-              <a aria-label="The navbar links" href="#" onClick$={() => scrollToElement('home')} preventdefault:click>
+              <a
+                aria-label="The navbar links"
+                href="#"
+                onClick$={() => {
+                  scrollToElement('home');
+                  toggleMenu();
+                }}
+                preventdefault:click
+              >
                 Home
               </a>
             </li>
             <li class="m-4 border-b-2 hover:border-b-purple-800 border-b-transparent duration-500">
-              <a aria-label="The navbar links" href="#" onClick$={() => scrollToElement('skills')} preventdefault:click>
+              <a
+                aria-label="The navbar links"
+                href="#"
+                onClick$={() => {
+                  scrollToElement('skills');
+                  toggleMenu();
+                }}
+                preventdefault:click
+              >
                 Skills
               </a>
             </li>
             <li class="m-4 border-b-2 hover:border-b-purple-800 border-b-transparent duration-500">
-              <a aria-label="The navbar links" href="#" onClick$={() => scrollToElement('projects')} preventdefault:click>
+              <a
+                aria-label="The navbar links"
+                href="#"
+                onClick$={() => {
+                  scrollToElement('projects');
+                  toggleMenu();
+                }}
+                preventdefault:click
+              >
                 Projects
+              </a>
+            </li>
+            <li class="m-4 border-b-2 hover:border-b-purple-800 border-b-transparent duration-500">
+              <a
+                aria-label="The navbar links"
+                href="#"
+                onClick$={() => {
+                  scrollToElement('contact-section');
+                  toggleMenu();
+                }}
+                preventdefault:click
+              >
+                Contact me
               </a>
             </li>
           </ul>

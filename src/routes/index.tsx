@@ -2,6 +2,7 @@ import { component$, $ } from '@builder.io/qwik';
 import Header from '~/components/starter/header';
 import Projects from '~/components/starter/projects';
 import Skills from '~/components/starter/skills';
+import Contact from '~/components/starter/contact';
 
 export const sendEmail = $(() => {
   window.location = 'mailto:ismailcourr@gmail.com' as any;
@@ -31,17 +32,7 @@ export default component$(() => {
         </div>
       </section>
       <Skills />
-      <section class="w-full flex flex-col md:flex-row justify-start md:justify-around items-center py-10 my-10 bg-black text-white">
-        <h3 class="w-3/4 md:w-1/3 font-bold text-3xl mb-10 md:mb-0">
-          Have An Awesome
-          <br /> Project Idea? Let's Discuss
-        </h3>
-        <div class="w-3/4 md:w-1/3 flex md:justify-end md:items-center">
-          <button class="w-full md:w-fit bg-button-grad rounded-full font-bold py-12 px-4 border border-transparent hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-700" type="button" onClick$={sendEmail}>
-            Contact Me
-          </button>
-        </div>
-      </section>
+      <Contact />
     </>
   );
 });
