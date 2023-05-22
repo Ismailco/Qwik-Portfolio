@@ -19,7 +19,7 @@ export default component$(() => {
 
   return (
     <nav class="w-full flex justify-around items-center h-16 bg-black text-[#f3f3f3] font-bold shadow-xl">
-      <a class="md:w-1/3 xl:w-1/6 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" aria-label="Portfolio logo" href="#">
+      <a class="md:w-1/3 xl:w-1/6 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" aria-label="Portfolio logo" href="/">
         Ismailcourr.<small class="text-xs">tech</small>
       </a>
       <ul class="xl:w-1/6 hidden xl:flex text-gray-300 font-normal">

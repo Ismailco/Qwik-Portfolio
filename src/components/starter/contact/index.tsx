@@ -1,13 +1,11 @@
-import { component$, $, useSignal } from '@builder.io/qwik';
+import { component$, $ } from '@builder.io/qwik';
 
 export default component$(() => {
   const handleFormSubmition = $(async (e: Event) => {
     e.preventDefault();
-    const form = document.getElementById('my-form') as HTMLFormElement;
-
-    // const status = document.getElementById('my-form-status') as HTMLParagraphElement;
+    const form = e.target as HTMLFormElement;
     const data = new FormData(form);
-    fetch(e.target.action, {
+    fetch(form.action, {
       method: form.method,
       body: data,
       headers: {
@@ -16,21 +14,12 @@ export default component$(() => {
     })
       .then((response) => {
         if (response.ok) {
-          // status.innerHTML = 'Thanks for your submission!';
           form.reset();
           window.location.href = '/thank-you';
-        } else {
-          // response.json().then((data) => {
-          //   if (Object.hasOwn(data, 'error')) {
-          //     status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
-          //   } else {
-          //     status.innerHTML = 'Oops! There was a problem submitting your form';
-          //   }
-          // });
         }
       })
       .catch((error) => {
-        status.innerHTML = 'Oops! There was a problem submitting your form';
+        console.error(error);
       });
   });
   return (
@@ -48,7 +37,7 @@ export default component$(() => {
       </section>
       <section class="relative">
         <div class="w-full flex flex-col md:flex-row justify-start md:justify-around items-center">
-          <form id="my-form" action="https://formspree.io/f/mqkooaao" method="POST" class="w-80 md:w-full max-w-xl mt-10 mb-32" onSubmit$={(e) => handleFormSubmition(e)} preventdefault:submit>
+          <form id="my-form" action="https://formspree.io/f/mqkooaao" method="POST" class="w-80 md:w-full max-w-xl mt-10 mb-32" onSubmit$={(e) => handleFormSubmition} preventdefault:submit>
             <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:bg-white focus:outline-none focus:border-button-grad" id="form-name" name="name" type="text" placeholder="Full Name" required />
             <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:bg-white focus:outline-none focus:border-button-grad mt-5" id="form-email" name="email" type="email" placeholder="Email" required />
             <textarea class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:bg-white focus:outline-none focus:border-button-grad mt-5" id="form-message" name="message" placeholder="Who can I help you today ☺️?" rows={10} required></textarea>
