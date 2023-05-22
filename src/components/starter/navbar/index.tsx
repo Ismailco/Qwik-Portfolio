@@ -7,6 +7,16 @@ export default component$(() => {
 
   const toggleMenu = $(() => {
     menu.value = !menu.value;
+     if (typeof window !== 'undefined') {
+       const menu = document.getElementById('mobile-menu');
+       if (menu) {
+          if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+          } else {
+            menu.classList.add('hidden');
+          }
+       }
+     }
   });
 
   return (
@@ -38,7 +48,7 @@ export default component$(() => {
         <button class="xl:hidden bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button" onClick$={toggleMenu}>
           Menu
         </button>
-        {/* <div class={`${menu ? "block" : "hidden"} flex flex-col justify-start items-start rounded-bl-full bg-black px-10 shadow-xl xl:hidden absolute w-96 h-screen top-16 right-0`}>
+        <div id="mobile-menu" class="flex flex-col justify-start items-start rounded-bl-full bg-black px-10 shadow-xl xl:hidden absolute w-96 h-screen top-16 right-0">
           <ul class="text-[#f3f3f3d1] mb-40 font-bold text-2xl">
             <li class="m-4 border-b-2 hover:border-b-purple-800 border-b-transparent duration-500">
               <a aria-label="The navbar links" href="#" onClick$={() => scrollToElement('home')} preventdefault:click>
@@ -78,7 +88,7 @@ export default component$(() => {
               </a>
             </li>
           </ul>
-        </div> */}
+        </div>
       </div>
     </nav>
   );

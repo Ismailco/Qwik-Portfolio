@@ -96,3 +96,13 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: #8b1fb9bb;
 }
+
+/* Mobile menu */
+
+.mobile-hidden {
+  display: none;
+}
+
+.mobile-show {
+  display: flex;
+}
