@@ -3,10 +3,9 @@ import { component$, $, useSignal } from '@builder.io/qwik';
 export default component$(() => {
   const handleFormSubmition = $(async (e: Event) => {
     e.preventDefault();
-    console.log('form submitted');
     const form = document.getElementById('my-form') as HTMLFormElement;
 
-    const status = document.getElementById('my-form-status') as HTMLParagraphElement;
+    // const status = document.getElementById('my-form-status') as HTMLParagraphElement;
     const data = new FormData(form);
     fetch(e.target.action, {
       method: form.method,
@@ -17,16 +16,17 @@ export default component$(() => {
     })
       .then((response) => {
         if (response.ok) {
-          status.innerHTML = 'Thanks for your submission!';
+          // status.innerHTML = 'Thanks for your submission!';
           form.reset();
+          window.location.href = '/thank-you';
         } else {
-          response.json().then((data) => {
-            if (Object.hasOwn(data, 'error')) {
-              status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
-            } else {
-              status.innerHTML = 'Oops! There was a problem submitting your form';
-            }
-          });
+          // response.json().then((data) => {
+          //   if (Object.hasOwn(data, 'error')) {
+          //     status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
+          //   } else {
+          //     status.innerHTML = 'Oops! There was a problem submitting your form';
+          //   }
+          // });
         }
       })
       .catch((error) => {
@@ -55,7 +55,7 @@ export default component$(() => {
             <button class="w-full md:w-fit rounded-xl font-bold p-2 border-2 border-gray-300 hover:border-gray-500 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-700 mt-5" type="submit">
               Send Message
             </button>
-            <p id="my-form-status" class="bg-green-300 my-2 p-2 text-center rounded-xl shadow-md border border-gray-700"></p>
+            {/* <p id="my-form-status" class="bg-green-300 my-2 p-2 text-center rounded-xl shadow-md border border-gray-700"></p> */}
           </form>
         </div>
       </section>
