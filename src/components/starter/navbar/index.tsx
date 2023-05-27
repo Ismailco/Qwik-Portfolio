@@ -17,6 +17,18 @@ export default component$(() => {
     }
   });
 
+  const openForm = $(() => {
+    if (typeof window !== 'undefined') {
+      const form = document.getElementById('contact-form');
+      if (form) {
+        if (form.classList.contains('hidden')) {
+          form.classList.remove('hidden');
+          form.classList.add('block');
+        }
+      }
+    }
+  });
+
   return (
     <nav class="w-full flex justify-around items-center h-16 bg-black text-[#f3f3f3] font-bold shadow-xl">
       <a class="md:w-1/3 xl:w-1/6 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" aria-label="Portfolio logo" href="/">
@@ -40,7 +52,14 @@ export default component$(() => {
         </li>
       </ul>
       <div class="md:w-1/3 xl:w-1/6 flex justify-end items-center">
-        <button class="hidden xl:block bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button" onClick$={() => scrollToElement('contact-section')}>
+        <button
+          class="hidden xl:block bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500"
+          type="button"
+          onClick$={() => {
+            scrollToElement('contact-section');
+            openForm();
+          }}
+        >
           LET'S TALK
         </button>
         <button class="xl:hidden bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500" type="button" onClick$={toggleMenu}>
@@ -94,11 +113,7 @@ export default component$(() => {
                 onClick$={() => {
                   scrollToElement('contact-section');
                   toggleMenu();
-                  const contactForm = document.getElementById('contact-form');
-                  if (contactForm) {
-                    contactForm.classList.remove('hidden');
-                    contactForm.classList.add('block');
-                  }
+                  openForm();
                 }}
                 preventdefault:click
               >

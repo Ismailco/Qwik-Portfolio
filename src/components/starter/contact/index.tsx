@@ -27,7 +27,6 @@ export default component$(() => {
 
   const handleContactClick = $(() => {
     formOpen.value = !formOpen.value;
-    console.log(formOpen.value);
   });
 
   return (
