@@ -94,6 +94,11 @@ export default component$(() => {
                 onClick$={() => {
                   scrollToElement('contact-section');
                   toggleMenu();
+                  const contactForm = document.getElementById('contact-form');
+                  if (contactForm) {
+                    contactForm.classList.remove('hidden');
+                    contactForm.classList.add('block');
+                  }
                 }}
                 preventdefault:click
               >
