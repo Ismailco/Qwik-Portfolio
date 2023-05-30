@@ -4,6 +4,14 @@ import Project from './project';
 export default component$(() => {
   const projects = [
     {
+      name: 'ParkInn',
+      desc: 'Find a parking spot near you.',
+      featuredImage: '/projects/parkinn.webp',
+      technologies: ['Front-end', 'PWA', 'React', 'Tailwind', 'Redux', '.NET'],
+      linkToLiveVersion: 'https://park-inn.live',
+      linkToSource: 'https://github.com/Co-Lab-You-Belong-in-Tech/Parkinn-frontend',
+    },
+    {
       name: 'Postcare',
       desc: 'This is a doctor appointment app built in collaboration white "David" a fellow software developer. The users can create an account or log in, to have access to a dashboard with all information, also the app has a chat functionality and a way to get todo tasks from the doctor',
       featuredImage: '/projects/postcare.webp',
