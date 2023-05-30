@@ -18,15 +18,15 @@ export default component$(() => {
       </div>
       <Projects />
       <section class="w-full flex flex-col md:flex-row justify-start md:justify-around items-center py-10 my-10 bg-black text-white">
-        <div>
+        <div class="my-4 mx-16 self-start">
           <p class="font-bold bg-clip-text bg-button-grad text-transparent">PROJECTS DONE</p>
           <p class="text-4xl font-bold">10+</p>
         </div>
-        <div>
+        <div class="my-4 mx-16 self-start">
           <p class="font-bold bg-clip-text bg-button-grad text-transparent">EXPERIENCE</p>
           <p class="text-4xl font-bold">1+ Years</p>
         </div>
-        <div>
+        <div class="my-4 mx-16 self-start">
           <p class="font-bold bg-clip-text bg-button-grad text-transparent">CLIENTS SATISFACTION</p>
           <p class="text-4xl font-bold">100%</p>
         </div>
