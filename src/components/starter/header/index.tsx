@@ -12,9 +12,9 @@ export default component$(() => {
           based in Morocco.
         </h1>
         <p class="">
-          I am a fan of technology, music, art, and movies. <br />
+          {/* I am a fan of technology, music, art, and movies. <br />
           I’m also a detail-oriented professional with excellent communication, interpersonal, and creative thinking skills.
-          <br />
+          <br /> */}
           My goal is to always build products that provide pixel-perfect, performant experiences, and are a delight to use. Always looking for opportunities to improve my skills and learn new things in the process. I am a fast learner and always open to new challenges.
           <br />I can help you build a product, feature, or website. Look through some of my work and experience. If you like what you see and have a project you need coded, feel free to contact me.
         </p>
@@ -30,7 +30,7 @@ export default component$(() => {
         </div>
       </div>
       <div class="w-5/6 xl:w-1/3 flex justify-start xl:justify-end items-center">
-        <div class="w-fit bg-button-grad rounded-full p-1 shadow-xl shadow-purple-800 hover:shadow-md duration-700">
+        <div class="w-96 bg-button-grad rounded-full p-1 shadow-xl shadow-purple-800 hover:shadow-md duration-700">
           <img class="w-full h-full rounded-full" src="/ismail_courr.webp" alt="hero-picture" />
         </div>
       </div>
