@@ -8,7 +8,7 @@ export default component$(() => {
         <h1 class="font-bold text-3xl xl:text-5xl line- w-full mb-4">
           👋 Hello, <span class="bg-clip-text bg-button-grad text-transparent">I'm Ismail,</span>
           <br />
-          Frontend Developer <br />
+          Full-stack Developer <br />
           based in Morocco.
         </h1>
         <p class="">
