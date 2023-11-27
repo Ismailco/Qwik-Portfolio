@@ -40,7 +40,7 @@ export default component$(() => {
       desc: "This project was built in colaborations with jhonathan. We had to select an API (OMDb API) that provides data about Movies and then build the webapp around it. The webapp has 2 user interfaces, it's mobile responsive",
       featuredImage: '/projects/movies_guru.webp',
       technologies: ['Front-end', 'HTML/CSS', 'JavaScript', 'API'],
-      linkToLiveVersion: 'https://movieguru.ml/',
+      linkToLiveVersion: 'https://jssol.github.io/api-based-webapp/',
       linkToSource: 'https://github.com/Ismailco/Movies-Guru',
     },
     {
