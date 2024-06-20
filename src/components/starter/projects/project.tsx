@@ -28,14 +28,16 @@ export default component$(({ name, image, source, live, tech }: ProjectProps) =>
             </ul>
             <h3 class="font-bold text-md">{name}</h3>
             <div class="pt-4">
-              {tech.map((item, i) => (
-                <span key={`${item} ${i}`} class="text-xs text-gray-900 border rounded-md mx-1 p-1 bg-white">{item}</span>
+              {tech.map((item) => (
+                <span key={`${item} ${name}`} class="text-xs text-gray-900 border rounded-md mx-1 p-1 bg-white">
+                  {item}
+                </span>
               ))}
             </div>
           </div>
         </div>
       </div>
-      <img class="w-full h-52 rounded-md" src={image} alt={name} />
+      <img class="w-full h-52 rounded-md" width="405" height="221" src={image} alt={name} />
     </article>
   );
 });
