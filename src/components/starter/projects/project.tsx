@@ -28,8 +28,8 @@ export default component$(({ name, image, source, live, tech }: ProjectProps) =>
             </ul>
             <h3 class="font-bold text-md">{name}</h3>
             <div class="pt-4">
-              {tech.map((item) => (
-                <span class="text-xs text-gray-900 border rounded-md mx-1 p-1 bg-white">{item}</span>
+              {tech.map((item, i) => (
+                <span key={`${item} ${i}`} class="text-xs text-gray-900 border rounded-md mx-1 p-1 bg-white">{item}</span>
               ))}
             </div>
           </div>
