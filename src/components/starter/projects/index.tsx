@@ -43,14 +43,14 @@ export default component$(() => {
       linkToLiveVersion: 'https://jssol.github.io/api-based-webapp/',
       linkToSource: 'https://github.com/Ismailco/Movies-Guru',
     },
-    {
-      name: 'Space travel Hub',
-      desc: 'This is a dummy website for company that provides commercial and scientific space travel sercises. This application will allow users to book rockets and join selected space missions.',
-      featuredImage: '/projects/space_travel.webp',
-      technologies: ['Front-end', 'HTML/CSS', 'JavaScript', 'React'],
-      linkToLiveVersion: 'https://morning-sands-55154.herokuapp.com/',
-      linkToSource: 'https://github.com/Ismailco/space-travel',
-    },
+    // {
+    //   name: 'Space travel Hub',
+    //   desc: 'This is a dummy website for company that provides commercial and scientific space travel sercises. This application will allow users to book rockets and join selected space missions.',
+    //   featuredImage: '/projects/space_travel.webp',
+    //   technologies: ['Front-end', 'HTML/CSS', 'JavaScript', 'React'],
+    //   linkToLiveVersion: 'https://morning-sands-55154.herokuapp.com/',
+    //   linkToSource: 'https://github.com/Ismailco/space-travel',
+    // },
     {
       name: 'Budget saver',
       desc: 'This app is a budget saver app. It allows users to save their budget and track their expenses. It has a login system and a registration system, and it has a user dashboard that shows the user their budget and expenses. built with Ruby on Rails, and postgresql.',
@@ -59,14 +59,14 @@ export default component$(() => {
       linkToLiveVersion: 'https://budget-saver.fly.dev/',
       linkToSource: 'https://github.com/Ismailco/budget-saver-new',
     },
-    {
-      name: 'Math magicians',
-      desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
-      featuredImage: '/projects/math_magicians.webp',
-      technologies: ['Front-end', 'HTML/CSS', 'React', 'Javascript'],
-      linkToLiveVersion: 'https://mathmagician2022.netlify.app/',
-      linkToSource: 'https://github.com/Ismailco/math-magicians',
-    },
+    // {
+    //   name: 'Math magicians',
+    //   desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
+    //   featuredImage: '/projects/math_magicians.webp',
+    //   technologies: ['Front-end', 'HTML/CSS', 'React', 'Javascript'],
+    //   linkToLiveVersion: 'https://mathmagician2022.netlify.app/',
+    //   linkToSource: 'https://github.com/Ismailco/math-magicians',
+    // },
   ];
 
   return (
