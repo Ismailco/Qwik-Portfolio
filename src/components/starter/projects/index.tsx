@@ -8,7 +8,7 @@ export default component$(() => {
       desc: 'Find a parking spot near you.',
       featuredImage: '/projects/parkinn.webp',
       technologies: ['Front-end', 'PWA', 'React', 'Tailwind', 'Redux', '.NET'],
-      linkToLiveVersion: 'https://park-inn.live',
+      linkToLiveVersion: 'https://parkinn-frontend.pages.dev/',
       linkToSource: 'https://github.com/Co-Lab-You-Belong-in-Tech/Parkinn-frontend',
     },
     {
@@ -24,7 +24,7 @@ export default component$(() => {
       desc: 'Book an appointment with your doctor, choose a date and time. This project was built with a Mobile-first design perspective and it is mobile responsive. The main technologies for the front end are React and Redux with tailwind css for styling, for the back end, it is built with Ruby on Rails and postgresql.',
       featuredImage: '/projects/doctor_app.webp',
       technologies: ['Full-stack', 'React', 'Tailwind', 'Rails', 'Postgresql'],
-      linkToLiveVersion: 'https://doctorbooker-app.herokuapp.com/',
+      linkToLiveVersion: 'https://booking-app1.netlify.app/',
       linkToSource: 'https://github.com/CodeX-computing/Booker-Front-End/',
     },
     {
@@ -43,14 +43,14 @@ export default component$(() => {
       linkToLiveVersion: 'https://jssol.github.io/api-based-webapp/',
       linkToSource: 'https://github.com/Ismailco/Movies-Guru',
     },
-    {
-      name: 'Space travel Hub',
-      desc: 'This is a dummy website for company that provides commercial and scientific space travel sercises. This application will allow users to book rockets and join selected space missions.',
-      featuredImage: '/projects/space_travel.webp',
-      technologies: ['Front-end', 'HTML/CSS', 'JavaScript', 'React'],
-      linkToLiveVersion: 'https://morning-sands-55154.herokuapp.com/',
-      linkToSource: 'https://github.com/Ismailco/space-travel',
-    },
+    // {
+    //   name: 'Space travel Hub',
+    //   desc: 'This is a dummy website for company that provides commercial and scientific space travel sercises. This application will allow users to book rockets and join selected space missions.',
+    //   featuredImage: '/projects/space_travel.webp',
+    //   technologies: ['Front-end', 'HTML/CSS', 'JavaScript', 'React'],
+    //   linkToLiveVersion: 'https://morning-sands-55154.herokuapp.com/',
+    //   linkToSource: 'https://github.com/Ismailco/space-travel',
+    // },
     {
       name: 'Budget saver',
       desc: 'This app is a budget saver app. It allows users to save their budget and track their expenses. It has a login system and a registration system, and it has a user dashboard that shows the user their budget and expenses. built with Ruby on Rails, and postgresql.',
@@ -59,14 +59,14 @@ export default component$(() => {
       linkToLiveVersion: 'https://budget-saver.fly.dev/',
       linkToSource: 'https://github.com/Ismailco/budget-saver-new',
     },
-    {
-      name: 'Math magicians',
-      desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
-      featuredImage: '/projects/math_magicians.webp',
-      technologies: ['Front-end', 'HTML/CSS', 'React', 'Javascript'],
-      linkToLiveVersion: 'https://mathmagician2022.netlify.app/',
-      linkToSource: 'https://github.com/Ismailco/math-magicians',
-    },
+    // {
+    //   name: 'Math magicians',
+    //   desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
+    //   featuredImage: '/projects/math_magicians.webp',
+    //   technologies: ['Front-end', 'HTML/CSS', 'React', 'Javascript'],
+    //   linkToLiveVersion: 'https://mathmagician2022.netlify.app/',
+    //   linkToSource: 'https://github.com/Ismailco/math-magicians',
+    // },
   ];
 
   return (

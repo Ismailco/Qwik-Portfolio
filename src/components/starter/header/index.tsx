@@ -31,7 +31,7 @@ export default component$(() => {
       </div>
       <div class="w-5/6 xl:w-1/3 flex justify-start xl:justify-end items-center">
         <div class="w-96 bg-button-grad rounded-full p-1 shadow-xl shadow-purple-800 hover:shadow-md duration-700">
-          <img class="w-full h-full rounded-full" src="/ismail_courr.webp" alt="hero-picture" />
+          <img class="w-full h-full rounded-full" width="600" height="600" src="/ismail_courr.webp" alt="hero-picture" />
         </div>
       </div>
     </header>
