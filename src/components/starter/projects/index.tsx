@@ -8,7 +8,7 @@ export default component$(() => {
       desc: 'Find a parking spot near you.',
       featuredImage: '/projects/parkinn.webp',
       technologies: ['Front-end', 'PWA', 'React', 'Tailwind', 'Redux', '.NET'],
-      linkToLiveVersion: 'https://park-inn.live',
+      linkToLiveVersion: 'https://parkinn-frontend.pages.dev/',
       linkToSource: 'https://github.com/Co-Lab-You-Belong-in-Tech/Parkinn-frontend',
     },
     {
@@ -24,7 +24,7 @@ export default component$(() => {
       desc: 'Book an appointment with your doctor, choose a date and time. This project was built with a Mobile-first design perspective and it is mobile responsive. The main technologies for the front end are React and Redux with tailwind css for styling, for the back end, it is built with Ruby on Rails and postgresql.',
       featuredImage: '/projects/doctor_app.webp',
       technologies: ['Full-stack', 'React', 'Tailwind', 'Rails', 'Postgresql'],
-      linkToLiveVersion: 'https://doctorbooker-app.herokuapp.com/',
+      linkToLiveVersion: 'https://booking-app1.netlify.app/',
       linkToSource: 'https://github.com/CodeX-computing/Booker-Front-End/',
     },
     {
