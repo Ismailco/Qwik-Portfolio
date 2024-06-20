@@ -32,6 +32,7 @@ export default component$(() => {
         </div>
       </section>
       <Skills />
+      
       <Contact />
     </>
   );
