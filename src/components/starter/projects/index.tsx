@@ -72,7 +72,7 @@ export default component$(() => {
   return (
     <section id="projects" class="w-full flex flex-col justify-center items-center my-10">
       <h2 class="font-bold text-3xl xl:text-4xl mb-10">My Projects</h2>
-      <section class="grid grid-cols-1 xl:grid-cols-3 gap-10 grid-flow-row place-content-center place-items-center">
+      <section class="w-5/6 grid grid-cols-1 xl:grid-cols-3 gap-10 grid-flow-row place-content-center place-items-center">
         {projects.map((project) => (
           <Project key={project.name} name={project.name} image={project.featuredImage} source={project.linkToSource} live={project.linkToLiveVersion} tech={project.technologies} />
         ))}
