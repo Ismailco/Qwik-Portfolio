@@ -26,7 +26,7 @@ export default component$(() => {
         </div>
         <div class="my-4 mx-16 self-start">
           <p class="font-bold bg-clip-text bg-button-grad text-transparent">EXPERIENCE</p>
-          <p class="text-4xl font-bold">1+ Years</p>
+          <p class="text-4xl font-bold">3+ Years</p>
         </div>
         <div class="my-4 mx-16 self-start">
           <p class="font-bold bg-clip-text bg-button-grad text-transparent">CLIENTS SATISFACTION</p>
