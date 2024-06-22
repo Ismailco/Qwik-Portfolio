@@ -6,7 +6,7 @@ import Contact from '~/components/starter/contact';
 import Recomendations from '~/components/starter/recomendations';
 
 export const sendEmail = $(() => {
-  window.location = 'mailto:ismailcourr@gmail.com' as any;
+  window.location = 'mailto:contact@ismailcourr.dev' as any;
 });
 
 export default component$(() => {
