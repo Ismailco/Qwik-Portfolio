@@ -1,9 +1,15 @@
 import { component$, $ } from '@builder.io/qwik';
 import { scrollToElement } from './scroll-to';
 
+declare global {
+  interface Window {
+    Calendly: any;
+  }
+}
+
 export default component$(() => {
   const handleCalendlyClick = $(() => {
-    Calendly.initPopupWidget({ url: 'https://calendly.com/ismailcourr/let-s-talk-about-your-project' });
+    window.Calendly.initPopupWidget({ url: 'https://calendly.com/ismailcourr/let-s-talk-about-your-project' });
     return false;
   });
 
