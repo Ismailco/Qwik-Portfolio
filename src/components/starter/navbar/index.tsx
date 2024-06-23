@@ -2,6 +2,11 @@ import { component$, $ } from '@builder.io/qwik';
 import { scrollToElement } from './scroll-to';
 
 export default component$(() => {
+  const handleCalendlyClick = $(() => {
+    Calendly.initPopupWidget({ url: 'https://calendly.com/ismailcourr/let-s-talk-about-your-project' });
+    return false;
+  });
+
   const toggleMenu = $(() => {
     if (typeof window !== 'undefined') {
       const menuCont = document.getElementById('mobile-menu');
@@ -55,10 +60,11 @@ export default component$(() => {
         <button
           class="hidden xl:block bg-button-grad text-black rounded-full px-6 py-2 hover:bg-clip-text hover:bg-button-grad hover:text-transparent duration-500"
           type="button"
-          onClick$={() => {
-            scrollToElement('contact-section');
-            openForm();
-          }}
+          onClick$={handleCalendlyClick}
+          // onClick$={() => {
+          //   scrollToElement('contact-section');
+          //   openForm();
+          // }}
         >
           LET'S TALK
         </button>

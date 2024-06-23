@@ -25,6 +25,7 @@ export default component$(() => {
         {/* <!-- Cloudflare Web Analytics --> */}
         <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1f8bee185aeb4b7cb2d10b935daa245d"}'></script>
         {/* <!-- End Cloudflare Web Analytics --> */}
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
       </body>
     </QwikCityProvider>
   );
