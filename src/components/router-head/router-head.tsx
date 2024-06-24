@@ -10,7 +10,7 @@ export const RouterHead = component$(() => {
 
   return (
     <>
-      <title>Ismail Courr - Frontend Developer Portfolio</title>
+      <title>Ismail Courr - Full-Stack Developer | Web, Mobile, and API Solutions</title>
 
       <link rel="canonical" href={loc.url.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,7 @@ export const RouterHead = component$(() => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@ismailco" />
       <meta name="twitter:creator" content="@ismailco" />
-      <meta name="twitter:title" content="Ismail Courr - Front-end Developer" />
+      <meta name="twitter:title" content="Ismail Courr - Full-Stack Developer | Web, Mobile, and API Solutions" />
       <meta name="twitter:description" content="I’m a software developer. I love to build things that live on the internet, from websites to web apps. I specialize in building exceptional digital experiences, products, and services. I'm quietly confident, naturally curious, and perpetually working on improving my skills one at a time." />
       <meta name="twitter:image" content="./web-preview.png" />
       <meta name="theme-color" content="#5E17EB" />
