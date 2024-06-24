@@ -61,6 +61,11 @@ export default component$(() => {
             Projects
           </a>
         </li>
+        <li class="mx-4 border-b-2 hover:border-b-purple-800 border-b-transparent duration-500">
+          <a aria-label="The navbar links" href="#" onClick$={() => scrollToElement('services')} preventdefault:click>
+            Services
+          </a>
+        </li>
       </ul>
       <div class="md:w-1/3 xl:w-1/6 flex justify-end items-center">
         <button
