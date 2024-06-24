@@ -16,11 +16,11 @@ export const RouterHead = component$(() => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="./web-preview.png" />
-      <meta property="og:description" content="I’m a software developer. I love to build things that live on the internet, from websites to web apps. I specialize in building exceptional digital experiences, products, and services. I'm quietly confident, naturally curious, and perpetually working on improving my skills one at a time." />
-      <meta property="og:url" content="https://ismailcourr.ml" />
-      <meta name="author" content="Ismail courr" />
-      <meta name="description" content="I’m a software developer. I love to build things that live on the internet, from websites to web apps. I specialize in building exceptional digital experiences, products, and services. I'm quietly confident, naturally curious, and perpetually working on improving my skills one at a time." />
-      <meta name="keywords" content="ismail, courr, portfolio, web developer, front end, back end, full stack, developer, html, css, Qwik, JavaScript, React, Redux, Tailwind css, Node js, Express js, MongoDB, Mongoose, Git, Github, Heroku, Netlify, Vercel, Firebase, Figma, jr front end developer, senior front end developer, front end developer intern, remote junior front end developer, react front end developer, front end developer resume, front end developer internship, front end developer portfolio, SEO, CEO, Fonder, CodeX Computing" />
+      <meta property="og:description" content="Experienced full-stack developer specializing in web and mobile app development using MERN Stack, React, Tailwind CSS, Ruby on Rails, and React Native. Offering custom web applications, responsive designs, cross-platform mobile apps, API development and integration, and database solutions. Let's build something great together!" />
+      <meta property="og:url" content="https://ismailcourr.dev" />
+      <meta name="author" content="Ismail Courr" />
+      <meta name="description" content="Experienced full-stack developer specializing in web and mobile app development using MERN Stack, React, Tailwind CSS, Ruby on Rails, and React Native. Offering custom web applications, responsive designs, cross-platform mobile apps, API development and integration, and database solutions. Let's build something great together!" />
+      <meta name="keywords" content="full-stack developer, web development, mobile app development, MERN stack, React, Node.js, Express.js, MongoDB, Ruby on Rails, PostgreSQL, Tailwind CSS, React Native, API development, API integration, Progressive Web Apps, single page applications, custom web applications, responsive web design, cross-platform mobile apps, database solutions, RESTful APIs, GraphQL, real-time applications, authentication and authorization, UI components, state management" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@ismailco" />
       <meta name="twitter:creator" content="@ismailco" />
