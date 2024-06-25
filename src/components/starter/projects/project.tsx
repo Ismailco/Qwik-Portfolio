@@ -38,7 +38,7 @@ export default component$(({ name, image, source, live, tech }: ProjectProps) =>
         </div>
       </div>
       <div class="h-80 flex justify-center items-center">
-        <img class="w-full rounded-md" width="405" height="221" src={image} alt={name} />
+        <img class="w-full md:w-96 xl:w-full rounded-md" width="405" height="221" src={image} alt={name} />
       </div>
     </article>
   );
