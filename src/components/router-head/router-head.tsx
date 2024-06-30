@@ -16,10 +16,10 @@ export const RouterHead = component$(() => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="./web-preview.png" />
-      <meta property="og:description" content="Experienced full-stack developer specializing in web and mobile app development using MERN Stack, React, Tailwind CSS, Ruby on Rails, and React Native. Offering custom web applications, responsive designs, cross-platform mobile apps, API development and integration, and database solutions. Let's build something great together!" />
+      <meta property="og:description" content="Experienced full-stack developer specializing in MERN, React, Tailwind CSS, Ruby on Rails, React Native. Offering custom apps, responsive designs, API integration." />
       <meta property="og:url" content="https://ismailcourr.dev" />
       <meta name="author" content="Ismail Courr" />
-      <meta name="description" content="Experienced full-stack developer specializing in web and mobile app development using MERN Stack, React, Tailwind CSS, Ruby on Rails, and React Native. Offering custom web applications, responsive designs, cross-platform mobile apps, API development and integration, and database solutions. Let's build something great together!" />
+      <meta name="description" content="Experienced full-stack developer specializing in MERN, React, Tailwind CSS, Ruby on Rails, React Native. Offering custom apps, responsive designs, API integration." />
       <meta name="keywords" content="full-stack developer, web development, mobile app development, MERN stack, React, Node.js, Express.js, MongoDB, Ruby on Rails, PostgreSQL, Tailwind CSS, React Native, API development, API integration, Progressive Web Apps, single page applications, custom web applications, responsive web design, cross-platform mobile apps, database solutions, RESTful APIs, GraphQL, real-time applications, authentication and authorization, UI components, state management" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@ismailco" />
