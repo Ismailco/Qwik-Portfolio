@@ -52,7 +52,7 @@ export default component$(() => {
 
   return (
     <div class="container mx-auto px-4 py-8 flex flex-col justify-start items-center">
-      <h1 class="text-3xl font-bold mb-6">My Services</h1>
+      <h2 class="text-3xl font-bold mb-6">My Services</h2>
       <ServiceList services={services} />
     </div>
   );
